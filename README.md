@@ -45,6 +45,12 @@ The public description intentionally omits private prompts, model configuration,
 
 See [the sanitized AI note](projects/local-ai-research-stack/README.md).
 
+## Sanitized reports
+
+- [Quantitative research report](reports/quantitative-research-report.md)
+- [Qualitative research report](reports/qualitative-research-report.md)
+- [CFTC COT data pipeline report](reports/cot-data-pipeline-report.md)
+
 ## Public-safe demonstration
 
 [examples/synthetic_validation_demo.py](examples/synthetic_validation_demo.py) is a standalone example using generated prices only. It demonstrates:
