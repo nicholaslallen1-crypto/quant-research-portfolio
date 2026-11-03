@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.env
+.python-version
+
+# Local research output
+data/
+datasets/
+artifacts/
+cache/
+research_runs/
+outputs/
+*.pkl
+*.pickle
+*.parquet
+*.feather
+*.csv
+*.xlsx
+*.xls
+*.sqlite
+*.db
+
+# Secrets and local configuration
+*.pem
+*.key
+*credentials*
+*service-account*
+secrets/
+config.local.*
+
