@@ -1,12 +1,22 @@
-# Synthetic validation example
+# Public-safe examples
 
-Run:
+The examples in this directory are standalone and use generated data only.
+
+## Edge-proof demo
+
+```text
+python examples/edge_proof_demo.py
+```
+
+This demonstrates a fixed candidate set, a horizon-aware temporal gap, train-only selection, validation and test scoring, and a higher-cost stress case. It reports JSON so the result can be consumed by another process without scraping prose.
+
+## Synthetic validation demo
 
 ```text
 python examples/synthetic_validation_demo.py
 ```
 
-The script generates a deterministic synthetic price series, purges entries that would overlap a split boundary, selects a small candidate on TRAIN only, evaluates it on VALIDATION and TEST, and reports a simple cost-stress case.
+This demonstrates deterministic synthetic prices, purging around a split boundary, train-only selection, and out-of-sample evaluation.
 
-The output is intentionally synthetic. It is included to demonstrate coding style and research discipline, not to disclose the private research engines or make a performance claim.
+Neither example represents private strategy logic, uses real market data, or makes a performance claim.
 

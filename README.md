@@ -2,7 +2,7 @@
 
 A public, sanitized showcase of quantitative research engineering.
 
-The work behind this portfolio spans macro signal discovery, systematic trade-structure research, reproducible validation, data-quality controls and a local AI analyst workflow. The production repositories, raw research data, private results exports and deployment details remain private by design. This repository contains only public-safe documentation and a small synthetic demonstration written for this portfolio.
+The work behind this portfolio spans macro signal discovery, systematic trade-structure research, reproducible validation, data-quality controls and a local AI analyst workflow. The production repositories, raw research data, private results exports and deployment details remain private by design. This repository contains only public-safe documentation and small synthetic demonstrations written for this portfolio.
 
 ## What I build
 
@@ -51,19 +51,15 @@ See [the sanitized AI note](projects/local-ai-research-stack/README.md).
 - [Qualitative research report](reports/qualitative-research-report.md)
 - [CFTC COT data pipeline report](reports/cot-data-pipeline-report.md)
 
-## Public-safe demonstration
+## Public-safe demonstrations
 
-[examples/synthetic_validation_demo.py](examples/synthetic_validation_demo.py) is a standalone example using generated prices only. It demonstrates:
+- [Synthetic validation demo](examples/synthetic_validation_demo.py) — generated prices, a train/validation/test boundary, horizon-aware purging and cost stress.
+- [Edge-proof demo](examples/edge_proof_demo.py) — generated observations, pre-declared candidate rules, train-only selection, out-of-sample scoring and deterministic audit flags.
+- [Edge-proof tests](tests/test_edge_proof_demo.py) — deterministic tests for split gaps, train-only selection and output contracts.
 
-- deterministic experiment setup;
-- a train/validation/test boundary;
-- horizon-aware purging;
-- candidate selection on training data only;
-- validation and out-of-sample evaluation;
-- a simple cost-stress case;
-- explicit, machine-readable output.
+Run the edge-proof demo with `python examples/edge_proof_demo.py` and its tests with `python -m unittest discover -s tests -p "test_*.py"`.
 
-It is not copied from the private systems and its synthetic output is not a performance claim.
+These examples are standalone, use generated data only and are not copied from private systems. Their thresholds, candidates and outputs are educational examples rather than investment advice or performance claims.
 
 ## What is deliberately excluded
 

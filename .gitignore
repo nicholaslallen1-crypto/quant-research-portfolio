@@ -8,6 +8,12 @@ env/
 .env
 .python-version
 
+# Test and tooling caches
+.coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
 # Local research output
 data/
 datasets/
