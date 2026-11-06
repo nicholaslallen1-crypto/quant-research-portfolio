@@ -1,5 +1,7 @@
 # Nicholas Allen — Quant Research Portfolio
 
+[![Python tests](https://github.com/nicholaslallen1-crypto/quant-research-portfolio/actions/workflows/python-tests.yml/badge.svg)](https://github.com/nicholaslallen1-crypto/quant-research-portfolio/actions/workflows/python-tests.yml)
+
 A public, sanitized showcase of quantitative research engineering.
 
 The work behind this portfolio spans macro signal discovery, systematic trade-structure research, reproducible validation, data-quality controls and a local AI analyst workflow. The production repositories, raw research data, private results exports and deployment details remain private by design. This repository contains only public-safe documentation and small synthetic demonstrations written for this portfolio.
